@@ -11,10 +11,10 @@ export function Apod() {
   if (error) return <p>Error fetching data</p>
 
   return (
-    <div>
+    <div className='flex'>
       <h1>{data?.title}</h1>
       <p>{data?.date}</p>
-      <img src={data?.url} alt={data?.title} style={{ maxWidth: '400px' }} />
+      <img src={data?.url} alt={data?.title} style={{  }} />
       <p>{data?.explanation}</p>
     </div>
   )
